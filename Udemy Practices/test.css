@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(#539be2, #2d4d4d);
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border: 1px solid #000000;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+    margin: auto;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #000000;
+    box-shadow: 1px 1px 1px #000000;
+}
+
+tr:nth-child(1) {
+    font-weight: bold;
+    font-size: 20px;
+}
