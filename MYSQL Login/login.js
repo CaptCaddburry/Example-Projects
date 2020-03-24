@@ -9,11 +9,11 @@ var fs = require('fs');
 var favicon = require('serve-favicon');
 
 var transporter = nodemailer.createTransport({
-    host: 'smtp.office365.com',
+    host: host,
     port: 587,
     auth: {
-        user: 'cadd.enterprises@outlook.com',
-        pass: 'Sciencerocks00!'
+        user: user,
+        pass: pass'
     }
 });
 
@@ -33,11 +33,11 @@ var authenticationNumber;
 var verified = false;
 
 var connection = mysql.createConnection({
-    host: '73.128.219.99',
-    port: '3306',
-    user: 'root',
-    password: 'Sciencerocks00!',
-    database: 'nodelogin'
+    host: host,
+    port: port,
+    user: user,
+    password: password,
+    database: database
 });
 
 var app = express();
@@ -100,7 +100,7 @@ app.post('/newUserInput', function(request, response) {
                 };
                 var htmlToSend = template(replacements);
                 var mailOptions = {
-                    from: 'cadd.enterprises@outlook.com',
+                    from: host,
                     to: String(email),
                     subject: 'Please Verify Your Account!',
                     html: htmlToSend
