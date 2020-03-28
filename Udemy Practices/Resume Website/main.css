@@ -1,32 +1,94 @@
+/* DEFAULT */
+
 body {
-    background: #d4b9b9;
+    background: linear-gradient(#539be2, #fdf394);
+    background-attachment: fixed;
+    margin: 0;
 }
 
-header div h1 {
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+header {
     color: #ffffff;
-    background: linear-gradient(#539be2, #2c703d);
-    border-radius: 10px;
-    box-shadow: 0 0 5px #000000;
     text-align: center;
-    max-width: 50%;
-    margin: auto;
+    width: 100%;
 }
 
-nav.navBar ul {
-    background-color: #a9a9a9;
-    list-style: none;
+/* NAV BAR */
+
+ul.navBar {
+    background-color: #d3d0d0;
     overflow: hidden;
+    width: 100%;
     margin: 0;
     padding: 0;
+}
+
+ul.navBar li {
+    list-style: none;
     float: left;
 }
 
-nav.navBar li a {
+ul.navBar li a {
     display: block;
-    text-decoration: none;
-    min-height: 16px;
-    text-align: center;
-    padding: 14px;
-    text-transform: uppercase;
+    line-height: 1.2;
     color: #666666;
+    min-height: 16px;
+    padding: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul.navBar li a:hover {
+    background-color: #81abff;
+    color: #ffffff;
+}
+
+ul.navBar li.nav-right {
+    float: right;
+}
+
+ul.navBar li.dropdownIcon {
+    display: none;
+}
+
+/* CUSTOM STYLES */
+
+
+
+/* PHONE SCREENS */
+
+@media screen and (max-width: 700px) {
+    ul.navBar li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.navBar li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+
+    ul.navBar.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.navBar.responsive {
+        position: relative;
+    }
+
+    ul.navBar.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.navBar.responsive li a {
+        display: block;
+        text-align: left;
+    }
 }

@@ -2,28 +2,29 @@
 <html>
 
 <head>
-    <title></title>
+    <title>My Website</title>
     <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="functions.js"></script>
 </head>
 
 <body>
-    <nav class="navBar">
-        <div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <nav>
+        <ul class="navBar" id="dropDownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="nav-right"><a href="#signup" onclick=signUpButton()>Sign Up</a></li>
+            <li class="nav-right"><a href="#signin" onclick="signInButton()">Sign In</a></li>
+            <li class="dropdownIcon"><a onclick=navBarChange()>&#9776;</a></l1>
+        </ul>
     </nav>
-    <header>
+    <div>
+        <header>
+            <h1>Welcome to this Website!</h1>
+        </header>
         <div>
-            <h1>Welcome to My Website!</h1>
+            <!---->
         </div>
-    </header>
-    <div class="container">
-        <!---->
     </div>
 </body>
 
