@@ -12,6 +12,7 @@ nav {
 }
 
 header {
+    display: block;
     color: #ffffff;
     text-align: center;
     width: 100%;
@@ -20,9 +21,11 @@ header {
 /* NAV BAR */
 
 ul.navBar {
+    display: block;
     background-color: #d3d0d0;
     overflow: hidden;
     width: 100%;
+    top: 0;
     margin: 0;
     padding: 0;
 }
@@ -58,7 +61,14 @@ ul.navBar li.dropdownIcon {
 
 /* CUSTOM STYLES */
 
+div.main-body {
+    display: block;
+}
 
+iframe {
+    display: block;
+    margin: auto;
+}
 
 /* PHONE SCREENS */
 
