@@ -15,13 +15,6 @@ nav {
     z-index: 10000;
 }
 
-.header {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    width: 100%;
-}
-
 /* NAV BAR */
 
 ul.navBar {
@@ -64,6 +57,21 @@ ul.navBar li.dropdownIcon {
 }
 
 /* CUSTOM STYLES */
+
+.main-body {
+    display: block;
+}
+
+.header {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+div.header h1 {
+    display: block;
+}
 
 iframe {
     display: block;
