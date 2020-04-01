@@ -1,19 +1,68 @@
 /* DEFAULT */
 
-body {
+* {
     display: block;
+}
+
+body {
     background: linear-gradient(#539be2, #fdf394);
     background-attachment: fixed;
     margin: 0;
 }
 
 nav {
-    display: block;
-    width: 100%;
     margin: 0;
     top: 0;
     position: fixed !important;
     z-index: 10000;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
 }
 
 .row {
@@ -32,10 +81,8 @@ nav {
 /* NAV BAR */
 
 ul.navBar {
-    display: block;
     background-color: #d3d0d0;
     overflow: hidden;
-    width: 100%;
     top: 0;
     margin: 0;
     padding: 0;
@@ -47,7 +94,6 @@ ul.navBar li {
 }
 
 ul.navBar li a {
-    display: block;
     line-height: 1.2;
     color: #666666;
     min-height: 16px;
@@ -89,12 +135,7 @@ ul.navBar li.dropdownIcon {
 }
 
 iframe {
-    display: block;
     margin: auto;
-}
-
-.col-4 {
-    width: 33.33%;
 }
 
 .message-box {
@@ -112,7 +153,7 @@ p.message {
 
 /* PHONE SCREENS */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     ul.navBar li:not(:nth-child(1)) {
         display: none;
     }
@@ -146,8 +187,12 @@ p.message {
         width: 100%;
     }
 
+    .col-6 {
+        width: 100%;
+    }
+
     .message-box {
-        width: 75%;
+        width: 85%;
         margin: auto;
     }
 }
