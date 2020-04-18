@@ -43,6 +43,10 @@ h5.modal-title {
     width: 70%;
 }
 
+.footer-img {
+    padding: 15px;
+}
+
 @media (max-width: 770px) {
     img.skateboard-vertical {
         width: 100%;
