@@ -47,6 +47,26 @@ h5.modal-title {
     padding: 15px;
 }
 
+.fa {
+    margin: 10px;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-google-plus-square {
+    color: #c32f10;
+}
+
+.fa-instagram {
+    color: #ffffff;
+}
+
+.social-wrapper {
+    margin: auto;
+}
+
 @media (max-width: 770px) {
     img.skateboard-vertical {
         width: 100%;
