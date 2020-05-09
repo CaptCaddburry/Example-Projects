@@ -50,6 +50,31 @@ body {
     display: none;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.headshot-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.headshot {
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: auto;
+}
+
+.services {
+    background-color: #f1f3fa;
+    padding: 4rem 1rem;
+}
+
 @media (max-width: 768px) {
     ul.topnav li a.nav-link {
         display: none;
