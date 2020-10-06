@@ -10,13 +10,16 @@ body {
     margin: 0;
 }
 
-.navbar {
-    display: flex;
-    padding: 10px;
+.navbar, .container {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .brand {
@@ -70,9 +73,116 @@ header {
     height: auto;
 }
 
-.services {
+.services, .contact-container {
     background-color: #f1f3fa;
     padding: 4rem 1rem;
+}
+
+.media-object {
+    display: flex;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+.icon {
+    width: 180px;
+}
+
+.icon-left, .icon-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-right, .blurb-wrapper-right {
+    order: 2;
+}
+
+.icon-left, .blurb-wrapper-left {
+    order: 1;
+}
+
+.blurb-wrapper-right, .blurb-wrapper-left {
+    flex: 1;
+}
+
+.blurb-header {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.blurb-info {
+    color: #646b90;
+    font-size: 18px;
+}
+
+.quote-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.quote-btn {
+    color: #ffffff;
+    background-color: #66b6d3;
+    font-size: 18px;
+    border: none;
+    padding: .8rem 4rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,.3);
+}
+
+.section-header {
+    text-align: center;
+    padding: 6rem 0 4rem;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-object {
+    max-width: 250px;
+    margin: 1rem 0;
+}
+
+.portfolio-box {
+    width: 250px;
+    height: 250px;
+    background-color: #f1f3fa;
+    transition: .2s ease-in-out;
+}
+
+.portfolio-box:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+form label {
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: .75rem;
+}
+
+.form-control {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #303137;
+    border-radius: 2px;
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    display: block;
+}
+
+.submit-btn-wrapper {
+    margin-top: 4rem;
 }
 
 @media (max-width: 768px) {
@@ -107,5 +217,38 @@ header {
     ul.topnav.responsive li a.nav-link {
         display: block;
         line-height: 2;
+    }
+
+    .portfolio-wrapper {
+        text-align: center;
+    }
+
+    .media-object {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .icon-right, .icon-left {
+        order: 1;
+    }
+
+    .blurb-wrapper-left, .blurb-wrapper-right {
+        order: 2;
+        padding-top: 2rem;
+    }
+
+    .form-group {
+        display: flex;
+    }
+
+    .submit-btn-wrapper {
+        text-align: center;
+    }
+}
+
+@media (max-width: 599px) {
+    .portfolio-wrapper {
+        justify-content: center;
     }
 }
