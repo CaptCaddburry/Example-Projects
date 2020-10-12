@@ -34,4 +34,15 @@ div.container {
 .new-user-form {
   text-align: right; }
 
+iframe {
+  width: 100%;
+  height: 300px;
+  padding: 20px 10px; }
+
+div.message, div.message2 {
+  text-align: center; }
+  div.message p, div.message2 p {
+    padding: 20px;
+    font-size: 17px; }
+
 /*# sourceMappingURL=styles.css.map */
