@@ -45,4 +45,28 @@ div.message, div.message2 {
     padding: 20px;
     font-size: 17px; }
 
+header h1 {
+  color: #ffffff; }
+
+section h2 {
+  color: #000000;
+  border: 2px solid #539be2;
+  padding: 10px; }
+section h3 {
+  color: #4d4d4d; }
+section h4 {
+  color: #4d4d4d; }
+
+.form-message {
+  font-size: 17px;
+  align-items: center;
+  text-align: center;
+  padding: 10px; }
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px; }
+
 /*# sourceMappingURL=styles.css.map */
