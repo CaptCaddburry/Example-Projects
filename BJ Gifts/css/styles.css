@@ -3,6 +3,28 @@ html {
 
 body {
   margin: 0;
-  font-family: Tahoma, Geneva, sans-serif; }
+  font-family: Tahoma, Geneva, sans-serif;
+  background-color: #89f5e3; }
+
+.navbar {
+  display: block;
+  width: 100%;
+  background-color: #4d4949; }
+
+.topnav {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  justify-content: space-around; }
+
+.navlink, .dropdownlink {
+  font-size: 24px; }
+  .navlink a, .dropdownlink a {
+    color: #ffebeb;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out; }
+    .navlink a:hover, .dropdownlink a:hover {
+      color: #ff0000;
+      font-size: 32px; }
 
 /*# sourceMappingURL=styles.css.map */
