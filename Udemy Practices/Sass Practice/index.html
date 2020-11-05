@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Testing Things Out</title>
+</head>
+
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 1000px;
+    }
+
+    .navbar {
+      display: block;
+      position: fixed;
+      width: 100%;
+    }
+
+    .topnav {
+      margin: 0;
+      padding: 15px 0;
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      background-color: #1a5b9b;
+    }
+
+    .navlink a {
+      text-decoration: none;
+      color: #d4d9d9;
+      font-size: 32px;
+      font-family: Impact, fantasy;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .navlink a:hover {
+      color: #f43;
+      font-size: 40px
+    }
+
+    .header-container {
+      text-align: center;
+      font-size: 40px;
+      padding: 100px 0 25px 0;
+      background-color: #ff7;
+      color: #525c5c;
+      font-family: Courier, monospace;
+    }
+
+    .header-container header {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .header-container header:hover {
+      font-size: 60px;
+      color: #febdbd;
+    }
+
+    .shapes {
+      display: flex;
+      justify-content: space-around;
+      background-color: #d4d9d9;
+      align-items: center;
+      padding: 100px 0;
+    }
+
+    .circle {
+      width: 200px;
+      height: 200px;
+      background-color: #539be2;
+      color: #fff;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      transition: all 0.5s cubic-bezier(0.5, -2, 0.5, 3);
+      font-family: Verdana, sans-serif;
+    }
+
+    .circle:hover {
+      background-color: #c0daf4;
+      color: #000;
+      width: 250px;
+      height: 250px;
+    }
+
+    .square {
+      width: 200px;
+      height: 200px;
+      background-color: #70f;
+      color: #fff;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      transition: all 0.5s cubic-bezier(0.5, -2, 0.5, 3);
+      font-family: Verdana, sans-serif;
+    }
+
+    .square:hover {
+      background-color: #bb80ff;
+      color: #000;
+      width: 250px;
+      height: 250px;
+    }
+
+    .oval {
+      width: 300px;
+      height: 200px;
+      background-color: #f70;
+      color: #fff;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      transition: all 0.5s cubic-bezier(0.5, -2, 0.5, 3);
+      font-family: Verdana, sans-serif;
+    }
+
+    .oval:hover {
+      background-color: #ffbb80;
+      color: #000;
+      width: 350px;
+      height: 250px;
+    }
+
+    .rectangle {
+      width: 300px;
+      height: 200px;
+      background-color: #0f7;
+      color: #fff;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      transition: all 0.5s cubic-bezier(0.5, -2, 0.5, 3);
+      font-family: Verdana, sans-serif;
+    }
+
+    .rectangle:hover {
+      background-color: #80ffbb;
+      color: #000;
+      width: 350px;
+      height: 250px;
+    }
+
+    @media(max-width: 1050px) {
+      .shapes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+      }
+      
+      .circle, .square, .oval, .rectangle {
+        margin: 25px 0;
+      }
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <ul class="topnav">
+            <li class="navlink"><a href="#">Home</a></li>
+            <li class="navlink"><a href="#">Media</a></li>
+            <li class="navlink"><a href="#">About</a></li>
+            <li class="navlink"><a href="#">Contact</a></li>
+            <li class="navlink"><a href="#">&#9776;</a></li>
+        </ul>
+    </nav>
+    <div class="header-container">
+        <header>Welcome To My Website</header>
+    </div>
+    <div class="shapes">
+        <div class="circle">Circle</div>
+        <div class="square">Square</div>
+        <div class="oval">Oval</div>
+        <div class="rectangle">Rectangle</div>
+    </div>
+</body>
+
+</html>
