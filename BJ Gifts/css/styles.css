@@ -33,7 +33,7 @@ body {
     transition: all 0.3s ease-in-out; }
     .navlink a:hover, .dropdownlink a:hover {
       color: #ff0000;
-      font-size: 32px; }
+      font-size: 40px; }
 
 path {
   fill: #1a1a1a;
