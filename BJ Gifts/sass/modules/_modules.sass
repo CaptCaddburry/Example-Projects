@@ -52,3 +52,43 @@
     background-color: $white
     padding: 25px 0 0 25px
     font-weight: 700
+
+.games-container
+    background-color: #a9a9a9
+    padding-top: 40px
+    margin-left: 0
+    margin-right: 0
+
+.game-selection
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+
+.game
+    width: 30%
+    padding-bottom: 25px
+
+.game-image
+    width: 200px
+    height: 200px
+    background-color: #666666
+    transition: all 0.3s ease-in-out
+    margin: auto
+    @include hover
+        width: 250px
+
+.game-title
+    text-align: center
+
+.game-button-container
+    display: flex
+    justify-content: center
+
+.modal-game-image
+    @extend .game-image
+    margin-bottom: 20px
+    @include hover
+        width: 200px
+
+.modal-game-title
+    @extend .game-title
