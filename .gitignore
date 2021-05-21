@@ -1,4 +1,5 @@
 DiscordBot/node_modules
+DiscordBot/.env
 MYSQL Login/node_modules/.bin/handlebars
 MYSQL Login/node_modules/.bin/handlebars.cmd
 MYSQL Login/node_modules/.bin/handlebars.ps1
