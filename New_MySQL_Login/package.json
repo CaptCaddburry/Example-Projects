@@ -1,22 +1,25 @@
 {
-  "name": "mysql-login",
+  "name": "New_MySQL_Login",
   "version": "1.0.0",
   "description": "",
-  "main": "login.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "CaptCaddburry",
-  "license": "ISC",
+  "main": "index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
-    "fs": "0.0.1-security",
+    "fs": "^0.0.1-security",
     "handlebars": "^4.7.3",
     "mysql": "^2.18.1",
     "nodemailer": "^6.4.3",
     "path": "^0.12.7",
     "serve-favicon": "^2.5.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node login.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

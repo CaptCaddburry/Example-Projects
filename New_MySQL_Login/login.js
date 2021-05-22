@@ -7,13 +7,14 @@ var nodemailer = require('nodemailer');
 var handlebars = require('handlebars');
 var fs = require('fs');
 var favicon = require('serve-favicon');
+const SMTPConnection = require('nodemailer/lib/smtp-connection');
 
 var transporter = nodemailer.createTransport({
-    host: host,
+    host: 'smtp.office365.com',
     port: 587,
     auth: {
-        user: user,
-        pass: pass
+        user: 'cadd.enterprises@outlook.com',
+        pass: 'Sciencerocks00!'
     }
 });
 
@@ -33,11 +34,11 @@ var authenticationNumber;
 var verified = false;
 
 var connection = mysql.createConnection({
-    host: host,
-    port: port,
-    user: user,
-    password: password,
-    database: database
+    host: '73.128.219.99',
+    port: '3306',
+    user: 'root',
+    password: 'Sciencerocks00!',
+    database: 'nodelogin'
 });
 
 var app = express();
@@ -50,10 +51,10 @@ app.use(session({
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use(favicon(path.join(__dirname + '../assets/favicon.ico')));
+app.use(favicon(path.join(__dirname + '/assets/favicon.ico')));
 
 app.get('/', function(request, response) {
-    response.sendFile(path.join(__dirname + '../html/login.html'));
+    response.sendFile(path.join(__dirname + '/html/login.html'));
 });
 
 app.post('/auth', function(request, response) {
@@ -76,7 +77,7 @@ app.post('/auth', function(request, response) {
 });
 
 app.get('/newUser', function(request, response) {
-    response.sendFile(path.join(__dirname + '../html/newUser.html'));
+    response.sendFile(path.join(__dirname + '/html/newUser.html'));
 });
 
 app.post('/newUserInput', function(request, response) {
@@ -137,15 +138,15 @@ app.post('/verify', function(request, response) {
 });
 
 app.get('/send', function(request, response) {
-    response.sendFile(path.join(__dirname + '../html/verify.html'));
+    response.sendFile(path.join(__dirname + '/html/verify.html'));
 });
 
 app.get('/home', function(request, response) {
-    response.sendFile(path.join(__dirname + '../html/access.html'));
+    response.sendFile(path.join(__dirname + '/html/access.html'));
 });
 
 app.get('/chicken', function(request, response) {
-    response.sendFile(path.join(__dirname + '../assets/chicken.jpg'));
+    response.sendFile(path.join(__dirname + '/assets/chicken.jpg'));
 });
 
 app.listen(8080);
