@@ -19,6 +19,8 @@ const backstory = [
 client.on('message', (msg) => {
     if (msg.content === 'Hello') msg.reply('Hi');
 
+    if (msg.content === '?help') msg.reply("Beep boop beep, I am here to give you the adventure of a lifetime!");
+
     if (msg.content === '?backstory') {
         for (var i = 0; i < backstory.length; i++) {
             msg.channel.send(backstory[i]);
