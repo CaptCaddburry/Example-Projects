@@ -1,0 +1,139 @@
+:root {
+    --glitched-duration: 0.9s;
+    --glitched-long-duration: 3s;
+    --yellow-color: #f9f002;
+    --yellow-color-opacity: #f9f00242;
+    --orange-color: #ff9800;
+    --border-color: #8ae66e;
+    --red-color: #ff003c;
+    --blue-color: #136377;
+    --green-color: #446d44;
+    --purple-color: purple;
+
+    --neon-color: #39ff14;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face {
+    font-family: 'Kill_The_Noise';
+    src: url('../assets/Kill_The_Noise.woff') format('woff');
+}
+
+body.titleImage {
+    background-color: var(--yellow-color);
+}
+
+div.titleFrame {
+    max-width: 75%;
+    height: auto;
+    margin: 25px auto 0;
+}
+
+p.titleHeader {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    z-index: 1;
+    color: var(--red-color);
+    font-size: 125px;
+}
+
+a button.entryButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cyberpunkFont {
+    font-family: 'Kill_The_Noise', fallback, sans-serif;
+}
+
+h1.titleHeader {
+    font-size: 75px;
+}
+
+p.bodyFont {
+    font-family: 'Press Start 2P', cursive;
+    font-size: small;
+}
+
+.col-8 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cyberpunk button {
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    @keyframes fontSizeSmall {
+        from {
+            font-size: small;
+        }
+
+        to {
+            font-size: x-small;
+        }
+    }
+
+    @keyframes headingSmall {
+        from {
+            font-size: 75px;
+        }
+
+        to {
+            font-size: 50px;
+        }
+    }
+
+    p.titleHeader {
+        font-size: 75px;
+        top: 20%;
+        left: 30%;
+    }
+
+    a button.entryButton {
+        left: 26%;
+    }
+
+    h1.titleHeader {
+        animation: headingSmall 3s forwards;
+    }
+
+    p.bodyFont {
+        animation: fontSizeSmall 3s forwards;
+    }
+}
+
+@media (min-width: 800px) {
+    @keyframes fontSizeLarge {
+        from {
+            font-size: x-small;
+        }
+
+        to {
+            font-size: small;
+        }
+    }
+
+    @keyframes headingLarge {
+        from {
+            font-size: 50px;
+        }
+
+        to {
+            font-size: 75px;
+        }
+    }
+
+    h1.titleHeader {
+        animation: headingLarge 3s forwards;
+    }
+
+    p.bodyFont {
+        animation: fontSizeLarge 3s forwards;
+    }
+}
